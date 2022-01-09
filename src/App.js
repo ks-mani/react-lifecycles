@@ -1,4 +1,5 @@
 import React from 'react';
+import Component1 from './Component1';
 
 class App extends React.Component {
   constructor() {
@@ -26,7 +27,7 @@ class App extends React.Component {
       <> 
         <button onClick={this.showComponentHandler} >Show Component 1</button>
         {
-          this.state.showComponent ? <p>Mani</p> : ''
+          this.state.showComponent ? <Component1 /> : ''
         }
       </>
     )
