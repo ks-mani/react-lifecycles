@@ -1,4 +1,5 @@
 import React from 'react';
+import Component2 from './Component2';
 
 class Component1 extends React.Component {
     constructor() {
@@ -43,6 +44,7 @@ class Component1 extends React.Component {
                 <div style={{marginTop: '20px'}}>
                     <input type="text" name="name" value={this.state.value} onChange={this.inputChangeHandler}/>    
                 </div>
+                <Component2 name={this.state.value} />
             </>
         )
     }
